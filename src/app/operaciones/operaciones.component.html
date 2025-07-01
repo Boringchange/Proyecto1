@@ -1,0 +1,19 @@
+<form>
+  <div class="mb-3">
+    <label for="txtNumeroUno" class="form-label">N&uacute;mero Uno :</label>
+    <input type="number" name="txtNumeroUno" id="txtNumeroUno" class="form-control" [(ngModel)]="numeroUno">
+  </div>
+  <div class="mb-3">
+    <label for="txtNumeroDos" class="form-label">N&uacute;mero Dos :</label>
+    <input type="number" name="txtNumeroDos" id="txtNumeroDos" class="form-control" [(ngModel)]="numeroDos">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">El resultado es {{ resultado }}</label>
+    </div>
+  <div class="mb-3">
+    <button class="btn btn-outline-primary" (click) = "sumar()">Sumar</button>
+    <button class="btn btn-outline-danger" (click) = "restar()">Restar</button>
+    <button class="btn btn-outline-success" (click) = "multiplicar()">Multiplicar</button>
+    <button class="btn btn-outline-warning" (click) = "dividir()">Dividir</button>
+  </div>
+</form>
